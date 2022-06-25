@@ -3,18 +3,47 @@
     height: 60px;
     padding-top: 16px;
     padding-bottom: 16px;
-    // @include flexCenter (flex, $cross-axis:center)
+    @include flexCenter (flex,$main-axis:space-between, $cross-axis:center)
     
 }
 .header {
+    position: relative;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: $border-color-head;
 }
+
+
+
+
 .menu-button{
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: $body-background-color;
+}
+.menu-button .icon-close{
+    display: none;
+}
+.menu-button.is-open .icon-close{
+    display: block;
+}
+.menu-button.is-open .icon-menu{
+    display: none;
+}
+
+
+.nav-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: bisque;
+    text-align: center;
+}
+.nav-menu.is-open{
+    display: block;
 }
