@@ -1,0 +1,115 @@
+.projec-element {
+    // width: calc((100% - 60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    padding-right: 0;
+
+    // &:nth-child(3n) {
+    //     margin-right: 0;
+    // }
+    // &:nth-last-child(-n + 3) {
+    //     margin-bottom: 0;
+    // }
+
+    &__link{
+        display: block;
+        text-decoration: none;
+       
+        &:hover, &:focus{
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          transition: box-shadow 250ms $cubic-beziez;
+         }
+     }
+    &__link:hover &__image::before, 
+    &__link:focus &__image::before {
+        transform: translateY(0);
+     }
+    &__link:hover  &__info, 
+    &__link:focus  &__info{
+        transform: translateY(0);
+     }
+    &__image{
+        position: relative;
+        overflow: hidden;
+     }
+    &__image::before{
+        display: inline-block;
+        content: "";
+        position: absolute;
+        background-color: #2196F3;
+        width: 100%;
+        height: 100%;
+    
+        opacity: 0.9;
+        transform: translateY(100%);
+        transition: transform 250ms $cubic-beziez;
+    
+     }
+     
+    &__info{
+        @include flexCenter ();
+        position: absolute;
+    
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0 24px;
+        transform: translateY(100%);
+        transition: transform 250ms $cubic-beziez;
+    
+        p{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.56;
+            letter-spacing: 0.03em;
+    
+            color: $body-background-color;
+        }
+    }
+    
+    &__border{
+        width: 370px;
+        padding: 20px 24px;
+        
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: $border-color;
+        
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $border-color;
+        
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: $border-color;
+    }
+    
+    &__tittle{
+        margin-bottom: 4px;
+        margin-top: 0;
+        
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $primary-text-color;
+    }
+    
+    &__subtitle{
+        color: $second-text-color;
+        text-decoration: none;
+        
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+

@@ -1,0 +1,12 @@
+.our-team{
+    @extend %section;
+    background-color: #F5F4FA;
+   
+    &__list{
+        // @include flexCenter ();
+
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,61 @@
+.form-policy {
+    @include flexCenter ();
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+
+    &__checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+    }
+
+    &__checkbox:checked+&__icon {
+        background-color: $accent-color;
+        border: $accent-color;
+        background-image: url(../images/icon-check.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: content-box;
+    }
+
+    &__checkbox:focus+&__icon {
+        border: 2px solid $accent-color;
+    }
+
+    &__icon {
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid $primary-text-color;
+        border-radius: 2px;
+        margin-right: 8px;
+    }
+
+    &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        color: $accent-color;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        text-decoration: none;
+    }
+}

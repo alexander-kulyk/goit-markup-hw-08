@@ -1,0 +1,68 @@
+.form-modal {
+    width: 528px;
+    padding: 40px;
+
+    &__tittle {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__field {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+
+        color: $second-text-color;
+    }
+
+    &__label {
+        margin-bottom: 4px;
+    }
+
+    &__input {
+        height: 40px;
+        padding-left: 42px;
+
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        outline: none;
+
+        transition: border 250ms $cubic-beziez;
+    }
+
+    &__input:focus {
+        border: 1px solid $accent-color;
+        cursor: pointer;
+    }
+
+    &__icon {
+        color: $primary-text-color;
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transition: color 250ms $cubic-beziez;
+    }
+
+    &__svg {
+        fill: currentColor;
+    }
+
+    &__input:focus~&__icon {
+        color: $accent-color;
+    }
+}

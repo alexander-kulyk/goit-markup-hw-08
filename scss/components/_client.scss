@@ -1,0 +1,45 @@
+.client{
+    @extend %section;
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__logo{
+        width: calc((100% - 30px)/2);
+        margin-right: 30px;
+        margin-bottom: 30px;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+        &:nth-child(n + 4){
+            margin-bottom: 0;
+        }
+        
+    }
+
+    &__link{
+        height: 92px;
+        @include flexCenter ();
+        
+        color: $social-icon-color;
+        border: 1px solid $social-icon-color;
+        border-radius: 4px;
+        
+        transition: color 250ms $cubic-beziez,
+        border 250ms $cubic-beziez;
+    }
+    &__link:hover, &__link:focus{
+        color: $accent-color;
+        border: 1px solid $accent-color;
+    }
+
+    &__icon{
+        fill: currentColor;
+    }
+}

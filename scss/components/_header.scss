@@ -1,0 +1,13 @@
+
+.header__container{
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    // @include flexCenter (flex, $cross-axis:center)
+    
+}
+.header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $border-color-head;
+}

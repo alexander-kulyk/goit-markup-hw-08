@@ -1,0 +1,35 @@
+.social-list{
+    @extend %social-list;
+    
+    &__item {
+    padding-left: 0;
+    }
+
+    &__item:not(:last-child){
+        padding-right: 10px;
+    }
+
+    &__link{
+        width: 44px;
+        height: 44px;
+        @include flexCenter ();
+
+        border-radius: 50%;
+        color: $social-icon-color;
+        
+        transition: background-color 250ms $cubic-beziez,
+        color 250ms $cubic-beziez;
+    }
+    &__link:hover, &__link:focus {
+            background-color: $accent-color;
+            color: $body-background-color;
+        }
+
+    &__icon{
+        @include flexCenter ();
+        }
+}
+
+.social-svg {
+fill: currentColor;
+}
