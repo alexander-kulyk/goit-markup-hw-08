@@ -3,8 +3,8 @@
     // @include flexCenter();
     // display: flex;
     // align-items: center;
-    height: 80px;
-    margin-left: 93px;
+    // height: 80px;
+    // margin-left: 93px;
 
     &__list {
         // width: calc((100% - 100px)/3);
@@ -33,15 +33,15 @@
         color: $accent-color;
     }
 
-    &__link--current::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        border-radius: 2px;
-        height: 4px;
-        background-color: $accent-color;
-    }
+    // &__link--current::after {
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     bottom: 0;
+    //     left: 0;
+    //     border-radius: 2px;
+    //     height: 4px;
+    //     background-color: $accent-color;
+    // }
 }

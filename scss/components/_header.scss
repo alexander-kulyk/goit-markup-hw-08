@@ -11,3 +11,10 @@
     border-bottom-style: solid;
     border-bottom-color: $border-color-head;
 }
+.menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: $body-background-color;
+}
