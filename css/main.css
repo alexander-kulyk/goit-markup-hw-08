@@ -327,6 +327,7 @@ html {
 
 .image {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -831,20 +832,25 @@ ol li {
 .portfolio__nav-list {
   margin-top: 0;
   margin-bottom: 50px;
+  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .portfolio__nav-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+.portfolio__nav-item:nth-child(3n) {
+  margin-right: 20px;
 }
 .portfolio__button {
   padding: 6px 22px;
@@ -884,7 +890,6 @@ ol li {
 }
 
 .projec-element {
-  margin-right: 30px;
   margin-bottom: 30px;
   margin-left: 0;
   padding-right: 0;
@@ -961,7 +966,6 @@ ol li {
   color: #ffffff;
 }
 .projec-element__border {
-  width: 370px;
   padding: 20px 24px;
   border-right-width: 1px;
   border-right-style: solid;

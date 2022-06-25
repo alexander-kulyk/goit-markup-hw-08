@@ -4,15 +4,22 @@
     &__nav-list{
         margin-top: 0;
         margin-bottom: 50px;
+        padding-left: 0;
         
-        @include flexCenter();
+        @include flexCenter( $main-axis:flex-start,$cross-axis:none);
         flex-wrap: wrap;
+
      }
      
      &__nav-item{
         &:not(:last-child) {
             margin-right: 8px;
+            margin-bottom: 15px;
         }
+        &:nth-child(3n) {
+            margin-right: 20px;
+        }
+        
      }
 
       &__button{
