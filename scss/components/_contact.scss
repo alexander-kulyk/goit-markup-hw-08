@@ -1,15 +1,18 @@
 .contact {
+    display: flex;
+    flex-direction: column-reverse;
 
     // @include flexCenter ();
     // display: flex;
     list-style-type: none;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 64px;
     margin-left: auto;
 
     &__list {
         // width: calc((100% - 50px)/2);
         // margin-left: 50px;
+        margin-bottom: 32px;
     }
 
     &__link {
@@ -19,12 +22,18 @@
 
         color: $second-text-color;
         font-weight: 500;
-        font-size: 14px;
+        // font-size: 40px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         text-decoration: none;
 
         transition: color 250ms var(--cubic-beziez);
+    }
+    &__link-phone {
+        font-size: 34px;
+    }
+    &__link-mail{
+        font-size: 24px;
     }
 
     &__link:hover,
@@ -38,6 +47,7 @@
     }
 
     &__icon {
+        display: none;
         fill: currentColor;
     }
 }

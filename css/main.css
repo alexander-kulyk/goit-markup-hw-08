@@ -388,6 +388,12 @@ ol li {
   border: none;
   background-color: #ffffff;
 }
+.menu-button__svg {
+  fill: currentColor;
+}
+.menu-button:hover, .menu-button:focus {
+  color: #2196F3;
+}
 
 .menu-button .icon-close {
   display: none;
@@ -407,13 +413,39 @@ ol li {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 300px;
-  background-color: bisque;
-  text-align: center;
+  background-color: #ffffff;
 }
 
 .nav-menu.is-open {
   display: block;
+}
+
+.social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 64px;
+}
+.social-menu__link {
+  margin-right: 10px;
+  padding-right: 10px;
+  color: #2196F3;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  text-decoration: none;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #EEEEEE;
+}
+.social-menu__link:not(:last-child) {
+  margin-right: 0;
+  padding-right: 0;
+  border: none;
 }
 
 .logo {
@@ -432,14 +464,19 @@ ol li {
   color: #2196F3;
 }
 
+.navigation {
+  margin-bottom: 300px;
+}
+.navigation__list {
+  margin-bottom: 32px;
+}
 .navigation__link {
   color: #212121;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 40px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding: 32px 0;
 }
 .navigation__link:hover, .navigation__link:focus {
   color: #2196F3;
@@ -452,20 +489,35 @@ ol li {
 }
 
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   list-style-type: none;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 64px;
   margin-left: auto;
+}
+.contact__list {
+  margin-bottom: 32px;
 }
 .contact__link {
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition: color 250ms var(--cubic-beziez);
   transition: color 250ms var(--cubic-beziez);
+}
+.contact__link-phone {
+  font-size: 34px;
+}
+.contact__link-mail {
+  font-size: 24px;
 }
 .contact__link:hover, .contact__link:focus {
   color: #2196F3;
@@ -474,6 +526,7 @@ ol li {
   margin-right: 10px;
 }
 .contact__icon {
+  display: none;
   fill: currentColor;
 }
 

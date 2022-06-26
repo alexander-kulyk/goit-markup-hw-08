@@ -4,21 +4,22 @@
     // align-items: center;
     // height: 80px;
     // margin-left: 93px;
+    margin-bottom: 300px;
 
     &__list {
         // width: calc((100% - 100px)/3);
         // margin-right: 50px;
+        margin-bottom: 32px;
     }
 
     &__link {
         color: $primary-text-color;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 40px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         text-decoration: none;
 
-        padding: 32px 0;
     }
 
     &__link:hover,
