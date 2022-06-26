@@ -1,20 +1,20 @@
 
 .modal-hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 528px;
-    min-height: 581px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    max-width: 450px;
+    // min-height: 610px;
     background-color: $body-background-color;
     border-radius: 4px;
 
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms $cubic-beziez;
+    // transform: translate(-50%, -50%) scale(1);
+    // transition: transform 250ms $cubic-beziez;
 
     &__button--close {
         position: absolute;
-        top: 1%;
-        right: 1%;
+        top: 20%;
+        right: 5%;
         background-image: url(../images/close-black.svg);
         background-repeat: no-repeat;
         background-position: center;
