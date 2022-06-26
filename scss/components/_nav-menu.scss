@@ -1,0 +1,13 @@
+.nav-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $body-background-color;
+    transform: translateY(-100%);
+    transition: transform 500ms $cubic-beziez;
+
+    &.is-open{
+        transform: translateY(0);
+    }
+}

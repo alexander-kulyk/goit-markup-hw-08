@@ -1,0 +1,30 @@
+.social-menu{
+    display: flex;
+    margin-bottom: 64px;
+
+    &__link{
+        margin-right: 10px;
+        padding-right: 10px;
+
+        color: $accent-color;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        list-style-type: none;
+        text-decoration: none;
+    
+    
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: $border-color;
+
+        &:not(:last-child) {
+            margin-right: 0;
+            padding-right: 0;
+            border: none;
+          }
+    }
+}

@@ -1,0 +1,28 @@
+.menu-button{
+    position: absolute;
+    z-index: 101;
+    top: 10px;
+    right: 15px;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: $body-background-color;
+
+    &__svg{
+        fill: currentColor;
+    }
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+    & .icon-close{
+        display: none;
+    }
+    &.is-open .icon-close{
+        display: block;
+    }
+    &.is-open .icon-menu{
+        display: none;
+    
+    }
+}
