@@ -1304,11 +1304,27 @@ ol li {
   padding-left: 0;
   padding-right: 0;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
 .projec-element {
   margin-bottom: 30px;
   margin-left: 0;
   padding-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .projec-element {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
 .projec-element__link {
   display: block;
