@@ -34,9 +34,12 @@
         }
 
     }
+    @media screen and(min-width: 1200px){
+        @include flexCenter ();
+    }
 
     // @include flexCenter ();
-    // display: flex;
+
 
 
     &__list {
@@ -49,13 +52,19 @@
                 margin-bottom: 0;
             }
         }
-        // width: calc((100% - 50px)/2);
-        // margin-left: 50px;
+        @media screen and(min-width: 1200px){
+            margin-bottom: 0;
+            width: calc((100% - 50px)/2);
+            margin-left: 50px;
+        }
         
     }
 
     &__link {
-        // @include flexCenter ();
+        @media screen and(min-width: 1200px){
+            @include flexCenter ();
+        }
+        
         // display: flex;
         // align-items: center;
 

@@ -1,9 +1,13 @@
 .navigation {
+    @media screen and(min-width: 1200px){
+       @include flexCenter();
+       margin-left: 93px;
+    }
     // @include flexCenter();
     // display: flex;
     // align-items: center;
     // height: 80px;
-    // margin-left: 93px;
+    //
 
     &__list {
        @media screen and (max-width:767px) {
