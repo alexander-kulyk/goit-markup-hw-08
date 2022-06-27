@@ -1308,6 +1308,12 @@ ol li {
   margin-top: 0;
   margin-bottom: 0;
 }
+@media screen and (min-width: 1200px) {
+  .client__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 @media screen and (max-width: 767px) {
   .client__logo {
     width: calc((100% - 60px) / 2);
