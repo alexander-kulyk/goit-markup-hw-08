@@ -21,25 +21,38 @@
         <div class="container header__container">
             <a class="logo" href="/"><span class="logo__web">Web</span>Studio</a>
             <!-- навігація -->
-            <nav>
-                <ul class="navigation">
-                    <li class="navigation__list"> <a class="navigation__link " href="./index.html">Студія</a>
-                    </li>
-                    <li class="navigation__list"> <a class="navigation__link navigation__link--current" href="">Портфоліо</a> </li>
-                    <li class="navigation__list"> <a class="navigation__link" href="">Контакти</a> </li>
-                </ul>
-            </nav>
-            <!-- контакти -->
-            <ul class="contact">
-                <li class="contact__list "><a class="contact__link" href="mailto:info@devstudio.com"> <svg
-                            class="contact__icon-envelope contact__icon" width="16px" heigt="12">
-                            <use href="./images/symbol-defs.svg#envelope"></use>
-                        </svg> info@devstudio.com</a></li>
-                <li class="contact__list"> <a class="contact__link" href="tel:+380961111111"><svg
-                            class="contact__icon-smartphone contact__icon" width="10px" heigt="16">
-                            <use href="./images/symbol-defs.svg#smartphone"></use>
-                        </svg> +38 096 111 11 11</a></li>
-            </ul>
+            <div class="header-menu">
+                <div class="nav-menu is-open" data-menu>
+                    <nav class="nav-container">
+                      <ul class="navigation">
+                        <li class="navigation__list"> <a class="navigation__link navigation__link--current" href="">Студія</a> </li>
+                        <li class="navigation__list"> <a class="navigation__link" href="./portfolio.html">Портфоліо</a> </li>
+                        <li class="navigation__list"> <a class="navigation__link" href="">Контакти</a> </li>
+                       </ul>
+                    </nav>
+                 <!-- контакти -->
+                 <ul class="contact">
+                    <li class="contact__list "><a class="contact__link contact__link-mail" href="mailto:info@devstudio.com"> <svg class="contact__icon-envelope contact__icon" width="16px" height="12"><use href="./images/symbol-defs.svg#envelope"></use></svg> info@devstudio.com</a></li>
+                    <li class="contact__list"> <a class="contact__link contact__link-phone" href="tel:+380961111111"><svg class="contact__icon-smartphone contact__icon"  width="10px" height="16"><use href="./images/symbol-defs.svg#smartphone"></use></svg> +38 096 111 11 11</a></li>
+                 </ul>
+                  <ul class="social-menu">
+                    <li><a class="social-menu__link" href="">instagram</a></li>
+                    <li><a class="social-menu__link" href="">twitter</a></li>
+                    <li><a class="social-menu__link" href="">facebook</a></li>
+                    <li><a class="social-menu__link" href="">linkedin</a></li>
+                  </ul>
+                </div>
+               
+                    
+                <button type="button" class="menu-button is-open" data-menu-button >
+                    <svg class="menu-button__svg" width="40" height="40" 
+                    aria-label="перемикач мобільного меню" 
+                    aria-expanded="false">
+                        <use class="icon-menu" href="./images/symbol-defs.svg#menu_40px" ></use>
+                        <use class="icon-close" href="./images/symbol-defs.svg#close_40px" ></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     
     </header>
@@ -198,31 +211,30 @@
     <!-- футер -->
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer__contact">
-                <a class="logo footer__logo" href="/"><span class="logo__web">Web</span>Studio</a>
-                <address class="footer__address">
-                    <ul class="footer__contact-conten">
-                        <li class="footer__contact-item">
-                            <a class="footer__contact-link" href="https://goo.gl/maps/9fmKYEebHjoqxfCN7"><span
-                                    class="footer__contact-street">Київ, пр-т Лесі Українки, 26</span> </a>
-                        </li>
-                        <li class="footer__contact-item"><a class="footer__contact-link"
-                                href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="footer__contact-item"><a class="footer__contact-link" href="tel:+380991111111">+38 099
-                                111 11 11</a></li>
+            <div class="contact-social">
+                <div class="footer__contact">
+                    <a class="logo footer__logo" href="/"><span class="logo__web">Web</span>Studio</a>
+                    <address class="footer__address">
+                        <ul class="footer__contact-conten">
+                            <li class="footer__contact-item">
+                                <a class="footer__contact-link" href="https://goo.gl/maps/9fmKYEebHjoqxfCN7"><span class="footer__contact-street">Київ, пр-т Лесі Українки, 26</span> </a>
+                            </li>
+                            <li class="footer__contact-item"><a class="footer__contact-link" href="mailto:info@example.com">info@example.com</a></li>
+                            <li class="footer__contact-item"><a class="footer__contact-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+        
+                <!-- Соціальна сітка -->
+                <div class="footer__social social-footer">
+                    <h2 class="social-footer_tittle">ПРИЄДНУЙТЕСЬ</h2>
+                    <ul class="social-list">
+                        <li class="social-list__item "><a class="social-list__link social-footer__icon-back" href="https://www.instagram.com" target="_blank"><svg class="social-svg social-footer__svg" width="20px" height="20px"><use href="./images/symbol-defs.svg#instagram"></use></svg></a></li>
+                        <li class="social-list__item "><a class="social-list__link social-footer__icon-back" href="https://twitter.com" target="_blank"><svg class="social-svg social-footer__svg" width="20px" height="20px"><use href="./images/symbol-defs.svg#twitter"></use></svg></a></li>
+                        <li class="social-list__item "><a class="social-list__link social-footer__icon-back" href="https://www.facebook.com" target="_blank"><svg class="social-svg social-footer__svg" width="20px" height="20px"><use href="./images/symbol-defs.svg#facebook"></use></svg></a></li>
+                        <li class="social-list__item "><a class="social-list__link social-footer__icon-back" href="https://linkedin.com" target="_blank"><svg class="social-svg social-footer__svg" width="20px" height="20px"><use href="./images/symbol-defs.svg#linkedin"></use></svg></a></li>
                     </ul>
-                </address>
-            </div>
-    
-            <!-- Соціальна сітка -->
-            <div class="footer__social social-footer">
-                <h2 class="social-footer_tittle">ПРИЄДНУЙТЕСЬ</h2>
-                <ul class="social-list">
-                    <li class="social-list__item "><a class="social-list__link social-footer__icon-back" href="https://www.instagram.com" target="_blank"><svg class="social-svg social-footer__svg" width="20px" height="20px"><use href="./images/symbol-defs.svg#instagram"></use></svg></a></li>
-                    <li class="social-list__item "><a class="social-list__link social-footer__icon-back" href="https://twitter.com" target="_blank"><svg class="social-svg social-footer__svg" width="20px" height="20px"><use href="./images/symbol-defs.svg#twitter"></use></svg></a></li>
-                    <li class="social-list__item "><a class="social-list__link social-footer__icon-back" href="https://www.facebook.com" target="_blank"><svg class="social-svg social-footer__svg" width="20px" height="20px"><use href="./images/symbol-defs.svg#facebook"></use></svg></a></li>
-                    <li class="social-list__item "><a class="social-list__link social-footer__icon-back" href="https://linkedin.com" target="_blank"><svg class="social-svg social-footer__svg" width="20px" height="20px"><use href="./images/symbol-defs.svg#linkedin"></use></svg></a></li>
-                </ul>
+                </div>
             </div>
     
             <!-- Підписатись  -->
