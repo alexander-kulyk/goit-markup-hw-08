@@ -1254,6 +1254,13 @@ ol li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__nav-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .portfolio__nav-item:not(:last-child) {
   margin-right: 8px;
   margin-bottom: 15px;

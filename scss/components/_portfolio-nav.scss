@@ -8,6 +8,9 @@
         
         @include flexCenter( $main-axis:flex-start,$cross-axis:none);
         flex-wrap: wrap;
+        @media screen and (min-width: 768px){
+            justify-content: center;
+        }
 
      }
      
