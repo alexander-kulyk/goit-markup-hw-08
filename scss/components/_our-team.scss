@@ -16,5 +16,10 @@
             margin: -15px;
             
         }
+        @media screen and(min-width: 1200px){
+            @include flexCenter ();
+            flex-wrap: nowrap;
+            align-items: center;
+        }
     }
 }
