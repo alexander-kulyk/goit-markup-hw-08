@@ -1,6 +1,7 @@
 .social-menu{
-    display: flex;
-    margin-bottom: 64px;
+    @media screen and (max-width:767px) {
+        display: flex;
+        margin-bottom: 64px;
 
     &__link{
         margin-right: 10px;
@@ -27,4 +28,10 @@
             border: none;
           }
     }
+    }
+    @media screen and(min-width: 768px) {
+        display: none;
+        
+    }
+    
 }

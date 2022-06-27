@@ -1,13 +1,21 @@
 .nav-menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: $body-background-color;
-    transform: translateY(-100%);
-    transition: transform 500ms $cubic-beziez;
+    @media screen and(max-width:767px){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $body-background-color;
+        transform: translateY(-100%);
+        transition: transform 500ms $cubic-beziez;
 
-    &.is-open{
+        &.is-open{
         transform: translateY(0);
+        }
     }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+    
+    
 }

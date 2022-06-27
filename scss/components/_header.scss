@@ -1,10 +1,25 @@
 
 .header__container{
-    height: 60px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    @include flexCenter (flex,$main-axis:space-between, $cross-axis:center)
-    
+    @include flexCenter (flex,$main-axis:space-between, $cross-axis:center);
+    @media screen and (max-width: 767px) {
+        height: 60px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    @media screen and  (min-width: 768px) {
+        height: 80px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        // @include flexCenter();
+    }
+}
+.header-menu{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        
+    }
 }
 .header {
     border-bottom-width: 1px;

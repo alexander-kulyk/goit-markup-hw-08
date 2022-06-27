@@ -1,28 +1,35 @@
 .menu-button{
-    position: absolute;
-    // z-index: 101;
-    top: 10px;
-    right: 15px;
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: $body-background-color;
+    @media screen and(max-width:767px) {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: $body-background-color;
 
-    &__svg{
+      &__svg{
         fill: currentColor;
-    }
-    &:hover, &:focus{
+     }
+      &:hover, &:focus{
         color: $accent-color;
-    }
-    & .icon-close{
+      }
+     & .icon-close{
         display: none;
-    }
-    &.is-open .icon-close{
+      }
+     &.is-open .icon-close{
         display: block;
-    }
-    &.is-open .icon-menu{
+     }
+     &.is-open .icon-menu{
         display: none;
     
+     }
     }
+
+    @media screen and( min-width: 768px) {
+        display: none;
+        
+    }
+
 }
