@@ -1450,6 +1450,17 @@ ol li {
   color: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .social-footer {
   margin-bottom: 60px;
 }

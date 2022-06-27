@@ -71,3 +71,11 @@
    // @include flexCenter ($cross-axis:none);
 
 }
+.contact-social{
+   @media screen and (min-width:768px) {
+      display: flex;
+      justify-content: space-evenly;
+
+      
+   }
+}
