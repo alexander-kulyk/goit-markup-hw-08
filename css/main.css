@@ -1123,15 +1123,28 @@ ol li {
 }
 
 .services {
-  display: none;
   margin-top: 0;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }
 .services__list {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .services__item {
   width: calc((100% - 60px) / 3);
@@ -1144,6 +1157,15 @@ ol li {
   position: relative;
 }
 .services__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;

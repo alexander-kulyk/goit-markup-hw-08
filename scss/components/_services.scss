@@ -1,5 +1,8 @@
 .services{
-    display: none;
+    @media screen and(max-width: 1199px){
+        display: none;
+    }
+    
     @extend %section;
     margin-top: 0;
     margin-bottom: 50px;
@@ -10,7 +13,7 @@
         margin-left: 0;
         padding-left: 0;
         
-        // @include flexCenter ();
+        @include flexCenter ();
     }
     
     &__item{
@@ -24,7 +27,7 @@
         position: relative;
     }
     &__text{
-        // @include flexCenter ();
+        @include flexCenter ();
         position: absolute;
         
         bottom: 0;
