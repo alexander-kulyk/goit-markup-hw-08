@@ -46,15 +46,8 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 60px)/2);
-       margin-right: 30px;
-       margin-bottom: 30px;
+       width: calc((100% - 4 * 15px)/2);
+       margin: 15px;
 
-       &:nth-child(2n){
-            margin-right: 0;
-        }
-       &:nth-last-child(-n+2) {
-        margin-bottom: 0;
-    }
     }
 }
