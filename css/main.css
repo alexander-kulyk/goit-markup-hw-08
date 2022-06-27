@@ -1184,7 +1184,7 @@ ol li {
 }
 @media screen and (max-width: 767px) {
   .client__logo {
-    width: calc((100% - 90px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
