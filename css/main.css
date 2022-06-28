@@ -332,7 +332,7 @@ html {
 }
 
 .image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -795,6 +795,16 @@ ol li {
   .hero__overlay {
     max-width: 1600px;
     max-height: 600px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url(../images/hero-img@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .hero__overlay {
+    background-image: url(../images/hero-img@3x.jpg);
   }
 }
 
