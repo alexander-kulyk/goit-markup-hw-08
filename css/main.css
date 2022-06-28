@@ -332,7 +332,7 @@ html {
 }
 
 .image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -450,7 +450,8 @@ ol li {
     border-right-style: solid;
     border-right-color: #EEEEEE;
   }
-  .social-menu__link:not(:last-child) {
+  .social-menu__link:nth-child(4n) {
+    margin-right: 0;
     margin-right: 0;
     padding-right: 0;
     border: none;
@@ -1268,6 +1269,7 @@ ol li {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 .item-card__text {
   padding-top: 30px;

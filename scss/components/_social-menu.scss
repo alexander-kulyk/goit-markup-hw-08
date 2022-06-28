@@ -22,7 +22,8 @@
         border-right-style: solid;
         border-right-color: $border-color;
 
-        &:not(:last-child) {
+        &:nth-child(4n) {
+            margin-right: 0;
             margin-right: 0;
             padding-right: 0;
             border: none;
