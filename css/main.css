@@ -816,6 +816,12 @@ ol li {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal-hero {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 .modal-hero__button--close {
   position: absolute;
   top: 20%;
