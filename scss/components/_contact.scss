@@ -20,7 +20,6 @@
 
         &__icon {
             display: none;
-            fill: currentColor;
         }
         
        
@@ -30,16 +29,14 @@
         margin-bottom: 0;
         
         &__icon{
-            color: $second-text-color;
+            fill: currentColor;
         }
 
     }
     @media screen and(min-width: 1200px){
         @include flexCenter ();
+        font-size: 14px;
     }
-
-    // @include flexCenter ();
-
 
 
     &__list {
@@ -64,9 +61,6 @@
         @media screen and(min-width: 1200px){
             @include flexCenter ();
         }
-        
-        // display: flex;
-        // align-items: center;
 
         color: $second-text-color;
         font-weight: 500;
