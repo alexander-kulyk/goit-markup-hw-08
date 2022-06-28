@@ -265,6 +265,12 @@ summary {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio, .client, .our-team, .services, .specifics {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .social-list {
   margin-top: 0;
@@ -1128,13 +1134,14 @@ ol li {
           align-items: center;
 }
 
-.services {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
 @media screen and (max-width: 1199px) {
   .services {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    padding-top: 0;
   }
 }
 .services__list {
@@ -1465,6 +1472,21 @@ ol li {
   .projec-element {
     width: calc((100% - 60px) / 2);
     margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projec-element {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .projec-element:nth-child(3n) {
+    margin-right: 0;
+  }
+  .projec-element:nth-last-child(-n+3) {
+    margin-bottom: 0;
   }
 }
 .projec-element__link {

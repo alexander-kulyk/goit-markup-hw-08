@@ -1,11 +1,13 @@
 .services{
+    @extend %section;
+
     @media screen and(max-width: 1199px){
         display: none;
     }
     
-    @extend %section;
-    margin-top: 0;
-    margin-bottom: 50px;
+    @media screen and(min-width: 1200px){
+        padding-top: 0;
+    }
 
     &__list{
         margin-top: 0;
