@@ -1,6 +1,8 @@
 .social-footer{
-    margin-bottom: 60px;
-
+    @media screen and(max-width: 1199px){
+        margin-bottom: 60px;
+    }
+    
     &_tittle{
         color: $body-background-color;
         font-family: 'Roboto';
@@ -11,7 +13,11 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         
-        text-align: center;
+        @media screen and(max-width: 1199px){
+            text-align: center;
+        }
+        
+        
     }
 
     &__icon-back{
