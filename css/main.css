@@ -406,6 +406,7 @@ ol li {
 
 @media screen and (max-width: 767px) {
   .nav-menu {
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
