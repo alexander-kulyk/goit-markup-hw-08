@@ -874,7 +874,7 @@ ol li {
 }
 
 .modal-hero {
-  min-width: 450px;
+  max-width: 450px;
   background-color: #ffffff;
   border-radius: 4px;
 }
