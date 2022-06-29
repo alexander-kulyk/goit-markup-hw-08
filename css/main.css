@@ -1635,6 +1635,8 @@ ol li {
   color: #ffffff;
 }
 .projec-element__border {
+  width: 100%;
+  min-height: 145px;
   padding: 20px 24px;
   border-right-width: 1px;
   border-right-style: solid;

@@ -86,7 +86,12 @@
     }
     
     &__border{
-        // width: 370px;
+        width: 100%;
+        min-height: 145px;
+        @media screen and (min-width: 768px) {
+            
+        }
+       
         padding: 20px 24px;
         
         border-right-width: 1px;
