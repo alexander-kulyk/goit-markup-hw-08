@@ -323,16 +323,17 @@ html {
 
 .tittle-h2 {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .tittle-h2 {
-    font-size: 28px;
+    font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -875,6 +876,7 @@ ol li {
 }
 
 .modal-hero {
+  position: relative;
   max-width: 450px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -900,8 +902,8 @@ ol li {
 }
 .modal-hero__button--close {
   position: absolute;
-  top: 20%;
-  right: 5%;
+  top: 8px;
+  right: 8px;
   background-image: url(../images/close-black.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -910,12 +912,6 @@ ol li {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-}
-@media screen and (min-width: 768px) {
-  .modal-hero__button--close {
-    top: 2%;
-    right: 2%;
-  }
 }
 .modal-hero__button--close:hover {
   cursor: pointer;
@@ -1062,9 +1058,14 @@ ol li {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  color: #757575;
   margin-bottom: 30px;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .form-policy {
+    font-size: 14px;
+  }
 }
 .form-policy__checkbox {
   -webkit-appearance: none;
@@ -1171,6 +1172,9 @@ ol li {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+}
+.specifics__item {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .specifics__item {
@@ -1795,10 +1799,8 @@ ol li {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
-  .subscribe {
-    margin-left: 93px;
-  }
+.subscribe {
+  margin-left: auto;
 }
 .subscribe__form {
   padding: 0;

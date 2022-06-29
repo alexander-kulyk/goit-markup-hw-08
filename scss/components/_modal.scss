@@ -1,5 +1,6 @@
 
 .modal-hero {
+    position: relative;
     max-width: 450px;
     
     background-color: $body-background-color;
@@ -21,8 +22,8 @@
 
     &__button--close {
         position: absolute;
-        top: 20%;
-        right: 5%;
+        top: 8px;
+        right: 8px;
         background-image: url(../images/close-black.svg);
         background-repeat: no-repeat;
         background-position: center;
@@ -33,11 +34,6 @@
         height: 30px;
 
         border-radius: 50%;
-        
-        @media screen and (min-width:768px){
-            top: 2%;
-            right: 2%;
-        }
     }
 
     &__button--close:hover {
