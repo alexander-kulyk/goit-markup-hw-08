@@ -1,22 +1,21 @@
 .contact {
-   
-
-    list-style-type: none;
-    margin-top: 0;
-    margin-left: auto;
-   
 
     @media screen and(max-width:767px) {
         display: flex;
         flex-direction: column-reverse;
-        margin-bottom: 64px;
+        padding-left: 0;
+    
 
         &__link-phone {
             font-size: 34px;
-         }
+            @media screen and (max-width:376px) {
+                font-size: 30px;
+                
+            }
+        }
         &__link-mail{
             font-size: 24px;
-         }
+        }
 
         &__icon {
             display: none;
@@ -26,17 +25,17 @@
     }
     @media screen and(min-width: 768px) {
         font-size: 12px;
-        margin-bottom: 0;
+            margin-bottom: 0;
         
         &__icon{
             fill: currentColor;
         }
 
     }
-    @media screen and(min-width: 1200px){
-        @include flexCenter ();
-        font-size: 14px;
-    }
+        @media screen and(min-width: 1200px){
+            @include flexCenter ();
+            font-size: 14px;
+        }
 
 
     &__list {
@@ -50,6 +49,8 @@
             }
         }
         @media screen and(min-width: 1200px){
+            margin-top: 0;
+            margin-left: auto;
             margin-bottom: 0;
             width: calc((100% - 50px)/2);
             margin-left: 50px;

@@ -28,6 +28,10 @@
         letter-spacing: 0.02em;
         text-decoration: none;
 
+        &--current{
+            color: $accent-color;
+        }
+
         @media screen and (min-width: 768px){
             padding-bottom: 32px;
         }
@@ -44,9 +48,8 @@
 
     
     @media screen and(max-width:767px){
-        margin-bottom: 300px;
-        margin-top: 48px;
         font-size: 40px;
+        padding-left: 0;
     }
     @media screen and(min-width: 768px) {
         display: flex;

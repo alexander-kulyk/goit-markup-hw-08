@@ -1,5 +1,12 @@
 .nav-menu{
+
     @media screen and(max-width:767px){
+        // height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+
         position: absolute;
         z-index: 1;
         top: 0;
