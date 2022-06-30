@@ -35,6 +35,8 @@
         @media screen and(min-width: 1200px){
             @include flexCenter ();
             font-size: 14px;
+            margin-top: 0;
+            margin-left: auto;
         }
 
 
