@@ -1,4 +1,4 @@
-.menu-button{
+.menu-button  {
     @media screen and(max-width:767px) {
         position: absolute;
         z-index: 1;
@@ -10,28 +10,28 @@
         border: none;
         background-color: $body-background-color;
 
-      &__svg{
-        fill: currentColor;
-     }
-      &:hover, &:focus{
-        color: $accent-color;
-      }
-     & .icon-close{
-        display: none;
-      }
-     &.is-open .icon-close{
-        display: block;
-     }
-     &.is-open .icon-menu{
-        display: none;
-    
-     }
-    }
 
-    @media screen and( min-width: 768px) {
+         &__svg{
+            fill: currentColor;
+         }
+         &:hover, &:focus{
+            color: $accent-color;
+         }
+         & .icon-close{
+            display: none;
+         }
+         &.is-open .icon-close{
+            display: block;
+         }
+         &.is-open .icon-menu{
+            display: none;
+         }
+   }
+
+   @media screen and( min-width: 768px) {
         display: none;
         
-    }
-
+   }
 }
-// .no-scroll{overflow:hidden}
+
+
