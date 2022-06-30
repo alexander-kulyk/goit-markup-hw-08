@@ -1,7 +1,6 @@
 .navigation {
     @media screen and(min-width: 1200px){
        @include flexCenter();
-       margin-left: 93px;
     }
     // @include flexCenter();
     // display: flex;
@@ -15,8 +14,10 @@
        }
         
         @media screen and (min-width: 768px) {
-            width: calc((100% - 100px)/3);
             margin-right: 50px;
+            &:last-child{
+                margin-right: 0;
+            }
         }
        
     }

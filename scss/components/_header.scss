@@ -1,6 +1,6 @@
 
 .header__container{
-    @include flexCenter (flex,$main-axis:space-between, $cross-axis:center);
+    // @include flexCenter (flex,$main-axis:space-between, $cross-axis:center);
     @media screen and (max-width: 767px) {
         height: 60px;
         padding-top: 16px;
@@ -21,6 +21,9 @@
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
+        margin-left: 93px;
+
+        width: 100%;
         
     }
 }
