@@ -686,7 +686,6 @@ body.no-scroll {
   .contact {
     font-size: 12px;
     margin-bottom: 0;
-    margin-left: auto;
   }
   .contact__icon {
     fill: currentColor;
@@ -760,8 +759,10 @@ body.no-scroll {
   margin-right: 10px;
 }
 
-.coco {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contact-social {
+    margin-left: auto;
+  }
 }
 
 .button {
