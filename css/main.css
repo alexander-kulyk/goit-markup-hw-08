@@ -521,20 +521,13 @@ body.no-scroll {
 }
 @media screen and (min-width: 768px) {
   .header__container {
-    height: 80px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 80px;
   }
 }
 
@@ -543,9 +536,6 @@ body.no-scroll {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-left: 93px;
     width: 100%;
   }
@@ -696,6 +686,7 @@ body.no-scroll {
   .contact {
     font-size: 12px;
     margin-bottom: 0;
+    margin-left: auto;
   }
   .contact__icon {
     fill: currentColor;
@@ -714,7 +705,6 @@ body.no-scroll {
             align-items: center;
     font-size: 14px;
     margin-top: 0;
-    margin-left: auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1801,6 +1791,7 @@ body.no-scroll {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 1199px) {
   .social-footer_tittle {
