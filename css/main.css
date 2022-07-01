@@ -356,6 +356,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 ul li,
 ol li {
   list-style: none;
@@ -451,6 +455,10 @@ ol li {
     display: flex;
     width: 100%;
   }
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
